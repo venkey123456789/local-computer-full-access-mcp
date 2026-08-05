@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatgpt-full-access-mcp"
+version = "1.0.0"
+description = "Windows-first MCP server that exposes local filesystem, shell, and process tools to an MCP client."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Local Computer Full-Access MCP contributors" }]
+keywords = ["mcp", "chatgpt", "windows", "local-computer", "automation"]
+dependencies = [
+  "mcp[cli]>=2.0,<3",
+  "psutil>=6.1,<8",
+]
+
+[project.scripts]
+pc-full-access-mcp = "pc_mcp.server:main"
+
+[tool.setuptools]
+packages = ["pc_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

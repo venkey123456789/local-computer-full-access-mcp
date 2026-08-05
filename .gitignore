@@ -1,0 +1,33 @@
+# Local secrets and runtime state
+.env
+.env.*
+!.env.example
+.data/
+*.log
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local packages and archives
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

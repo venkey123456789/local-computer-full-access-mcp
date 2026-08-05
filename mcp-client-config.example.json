@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "local-computer-full-access": {
+      "command": "<PROJECT_DIR>\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "pc_mcp.server"],
+      "cwd": "<PROJECT_DIR>",
+      "env": {
+        "PC_MCP_TRANSPORT": "stdio",
+        "PC_MCP_FULL_ACCESS": "1"
+      }
+    }
+  }
+}
